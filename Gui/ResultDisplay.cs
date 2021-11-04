@@ -36,5 +36,10 @@ namespace VsiteCSharpKvadratnaJednadzbaGui
             this.textBoxRoot1.Text = this.qe.Roots[0].ToString();
             this.textBoxRoot2.Text = this.qe.Roots[1].ToString();
         }
+
+        private void numericUpDown_ValueChanged(object sender, EventArgs e)
+        {
+            this.FillResults();
+        }
     }
 }
