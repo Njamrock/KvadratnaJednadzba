@@ -58,7 +58,7 @@ namespace VsiteCSharpKvadratnaJednadzbaGui
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(275, 129);
+            this.groupBox1.Size = new System.Drawing.Size(233, 129);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Coefficients";
@@ -164,16 +164,16 @@ namespace VsiteCSharpKvadratnaJednadzbaGui
             this.textBoxDiscriminant.Location = new System.Drawing.Point(92, 167);
             this.textBoxDiscriminant.Name = "textBoxDiscriminant";
             this.textBoxDiscriminant.ReadOnly = true;
-            this.textBoxDiscriminant.Size = new System.Drawing.Size(100, 20);
+            this.textBoxDiscriminant.Size = new System.Drawing.Size(134, 20);
             this.textBoxDiscriminant.TabIndex = 7;
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.textBoxRoot2);
             this.groupBox2.Controls.Add(this.textBoxRoot1);
-            this.groupBox2.Location = new System.Drawing.Point(15, 214);
+            this.groupBox2.Location = new System.Drawing.Point(15, 193);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(230, 206);
+            this.groupBox2.Size = new System.Drawing.Size(230, 116);
             this.groupBox2.TabIndex = 8;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "&Roots";
@@ -203,7 +203,7 @@ namespace VsiteCSharpKvadratnaJednadzbaGui
             this.Controls.Add(this.label4);
             this.Controls.Add(this.groupBox1);
             this.Name = "ResultDisplay";
-            this.Size = new System.Drawing.Size(515, 482);
+            this.Size = new System.Drawing.Size(258, 320);
             this.Load += new System.EventHandler(this.ResultDisplay_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

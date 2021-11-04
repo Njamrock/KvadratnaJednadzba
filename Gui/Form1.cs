@@ -8,5 +8,10 @@ namespace VsiteCSharpKvadratnaJednadzbaGui
         {
             this.InitializeComponent();
         }
+
+        private void buttonEvaluate_Click(object sender, System.EventArgs e)
+        {
+            this.resultDisplay.FillResults();
+        }
     }
 }
