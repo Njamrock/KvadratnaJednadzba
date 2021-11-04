@@ -50,6 +50,11 @@ namespace KvadratnaJednadzba
         {
             get
             {
+                if (a == 0)
+                {
+                    //return new[] {new Complex.Complex(-this.c / this.b, 0), -this.c / this.b }
+                }
+
                 Complex.Complex[] sqrtDisc = Complex.Complex.Sqrt(this.Discriminant);
                 Complex.Complex realPart = (new Complex.Complex(-this.b, 0)) / (new Complex.Complex(2 * this.a, 0));
                 sqrtDisc[0] /= (new Complex.Complex(2 * this.a, 0));
