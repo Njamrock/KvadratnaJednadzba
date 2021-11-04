@@ -30,6 +30,8 @@ namespace VsiteCSharpKvadratnaJednadzbaGui
         private void InitializeComponent()
         {
             this.resultDisplay = new VsiteCSharpKvadratnaJednadzbaGui.ResultDisplay();
+            this.functionPanel1 = new VsiteCSharpKvadratnaJednadzbaGui.FunctionPanel();
+            ((System.ComponentModel.ISupportInitialize)(this.functionPanel1)).BeginInit();
             this.SuspendLayout();
             // 
             // resultDisplay
@@ -39,14 +41,24 @@ namespace VsiteCSharpKvadratnaJednadzbaGui
             this.resultDisplay.Size = new System.Drawing.Size(258, 320);
             this.resultDisplay.TabIndex = 0;
             // 
+            // functionPanel1
+            // 
+            this.functionPanel1.Location = new System.Drawing.Point(267, 30);
+            this.functionPanel1.Name = "functionPanel1";
+            this.functionPanel1.Size = new System.Drawing.Size(508, 290);
+            this.functionPanel1.TabIndex = 1;
+            this.functionPanel1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 335);
+            this.Controls.Add(this.functionPanel1);
             this.Controls.Add(this.resultDisplay);
             this.Name = "Form1";
             this.Text = "Quadratic Equation";
+            ((System.ComponentModel.ISupportInitialize)(this.functionPanel1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -54,6 +66,7 @@ namespace VsiteCSharpKvadratnaJednadzbaGui
         #endregion
 
         private ResultDisplay resultDisplay;
+        private FunctionPanel functionPanel1;
     }
 }
 
