@@ -13,6 +13,7 @@ namespace VsiteCSharpKvadratnaJednadzbaGui
 {
     public partial class ResultDisplay : UserControl
     {
+        public event EventHandler CoefficientChanged;
         public ResultDisplay()
         {
             InitializeComponent();
@@ -40,6 +41,10 @@ namespace VsiteCSharpKvadratnaJednadzbaGui
         private void numericUpDown_ValueChanged(object sender, EventArgs e)
         {
             this.FillResults();
+            if (CoefficientChanged != null)
+            {
+                CoefficientChanged(this, EventArgs.Empty);
+            }
         }
     }
 }

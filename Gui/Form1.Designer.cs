@@ -40,9 +40,12 @@ namespace VsiteCSharpKvadratnaJednadzbaGui
             this.resultDisplay.Name = "resultDisplay";
             this.resultDisplay.Size = new System.Drawing.Size(258, 320);
             this.resultDisplay.TabIndex = 0;
+            this.resultDisplay.Load += new System.EventHandler(this.resultDisplay_Load);
             // 
             // functionPanel1
             // 
+            this.functionPanel1.BackColor = System.Drawing.SystemColors.Window;
+            this.functionPanel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.functionPanel1.Location = new System.Drawing.Point(267, 30);
             this.functionPanel1.Name = "functionPanel1";
             this.functionPanel1.Size = new System.Drawing.Size(508, 290);

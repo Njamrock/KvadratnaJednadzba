@@ -44,13 +44,12 @@ namespace Complex
 
         public static Complex[] Sqrt(double number)
         {
-            return number >= 0 ? new Complex[] { new Complex(Math.Sqrt(number), 0), new Complex(-Math.Sqrt(number), 0) } : new Complex[] { new Complex(0, Math.Sqrt(-number)), new Complex(0, -Math.Sqrt(-number)) };
+            return number >= 0 ? new[] { new Complex(Math.Sqrt(number), 0), new Complex(-Math.Sqrt(number), 0) } : new Complex[] { new Complex(0, Math.Sqrt(-number)), new Complex(0, -Math.Sqrt(-number)) };
         }
 
         public override string ToString()
         {
             return string.Format("{0} + {1}i", this.real, this.Imaginary);
-
         }
 
         private double real;
